@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+*.ipynb_checkpoints
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# PyTorch model files and intermediate files
+*.pth
+*.pt
+
+# Logs and temp files
+*.log
+*.tmp
+.DS_Store
+
+# System
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data (optional - if raw datasets are not meant for repo)
+data/
+*.csv
+*.tsv
+*.json
+
+# Uploaded/downloaded model & mapping artifacts
+model/class_mappings.json
+model/transforms.pkl
+model/codemonk_model.pth
+
+# Streamlit/machine-specific
+.streamlit/secrets.toml
