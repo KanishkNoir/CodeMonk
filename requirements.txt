@@ -1,7 +1,5 @@
-fastapi
-uvicorn
 streamlit
-pillow
 torch
 torchvision
-scikit-learn
+Pillow
+requests
