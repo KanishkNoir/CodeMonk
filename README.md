@@ -67,6 +67,11 @@ CodeMonk/
 │       ├── class_mappings.json # Label mappings for all categories
 │       ├── transforms.pkl      # Image preprocessing pipeline
 │       └── __init__.py
+├── test_examples/
+│   ├── example_1.jpg          # Men's blue jacket test image
+│   ├── example_2.jpg          # Men's red sports shoes test image
+│   ├── example_3.jpg          # Women's silver necklace test image
+│   └── examples.md            # Detailed descriptions of test examples
 ├── requirements.txt            # Python dependencies
 └── README.md                  # This file
 ```
@@ -179,6 +184,11 @@ We need to predict 4 different attributes from a single fashion product image:
 2. Choose "Upload Image" or "Image URL"
 3. Select/paste your fashion image
 4. Get instant predictions for all 4 attributes
+
+### 🧪 Test Examples
+
+We've included 3 test images in the `test_examples/` directory in examples.md file that showcases few examples tested on the trained model.
+
 
 ## 🛠️ Development
 
