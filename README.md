@@ -8,6 +8,8 @@ A deep learning application that predicts 4 different attributes from a single f
 
 No installation required! Just upload an image or paste an image URL to get instant predictions.
 
+**Kaggle Notebook**: [https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh](https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh)
+
 ## 🚀 Quick Start
 
 ### Option 1: Use Live Demo (Recommended)
