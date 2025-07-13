@@ -15,15 +15,12 @@ class FashionModel(nn.Module):
         self.article_type_head = nn.Linear(num_features, num_article_types)
         self.season_head = nn.Linear(num_features, num_seasons)
         self.base_colour_head = nn.Linear(num_features, num_base_colours)
-        self.base_season_head = nn.Linear(num_features, num_seasons)
         
     def forward(self, x):
-        features = self.backbone(x).view(x.size(0), -1)
+        features = self.backbone(x).squeeze()
         gender_out = self.gender_head(features)
         article_out = self.article_type_head(features)
         base_colour_out = self.base_colour_head(features)
-        season_out = self.base_season_head(features)
+        season_out = self.season_head(features)
 
         return gender_out, article_out, base_colour_out, season_out
-
-

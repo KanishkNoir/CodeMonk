@@ -130,6 +130,30 @@ We need to predict 4 different attributes from a single fashion product image:
 
 ## 📊 Model Performance
 
+### Baseline Accuracy (Most Common Class)
+| Attribute | Most Common Class | Baseline Accuracy |
+|-----------|-------------------|-------------------|
+| Gender | Men | 49.85% |
+| Article Type | Tshirts | 15.91% |
+| Base Colour | Black | 21.91% |
+| Season | Summer | 48.38% |
+
+### Training Results After 10 Epochs
+| Attribute | Train Accuracy | Validation Accuracy | Improvement vs Baseline |
+|-----------|---------------|---------------------|------------------------|
+| Gender | 90.17% | 88.74% | +38.89% |
+| Article Type | 81.56% | 78.80% | +62.89% |
+| Base Colour | 55.39% | 51.94% | +30.03% |
+| Season | 73.35% | 70.05% | +21.67% |
+
+**Training Loss**: 2.2264 | **Validation Loss**: 4.0071
+
+### Key Insights
+- **Article Type** shows the most significant improvement (62.89% over baseline)
+- **Gender** achieves the highest absolute accuracy (88.74% validation)
+- **Base Colour** is the most challenging task but still shows 30% improvement
+- All attributes significantly outperform baseline accuracy
+
 ### Expected Performance
 - **ResNet-50**: Too heavy for our dataset size, would train slower
 - **Simple CNN**: Not powerful enough for 143 different product types
