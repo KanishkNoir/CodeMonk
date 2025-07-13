@@ -96,7 +96,7 @@ elif option == "Image URL":
 
 # Predict
 if 'image' in locals():
-    st.image(image, caption="Input Image", use_column_width=True)
+    st.image(image, caption="Input Image", use_container_width=True)
 
     with st.spinner("Classifying..."):
         image_tensor = transform(image).unsqueeze(0).to(device)
