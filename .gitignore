@@ -36,9 +36,10 @@ data/
 *.json
 
 # Uploaded/downloaded model & mapping artifacts
-model/class_mappings.json
-model/transforms.pkl
-model/codemonk_model.pth
+# Note: These files are needed for deployment, so they're NOT ignored
+# model/class_mappings.json
+# model/transforms.pkl
+# model/codemonk_model.pth
 
 # Streamlit/machine-specific
 .streamlit/secrets.toml
