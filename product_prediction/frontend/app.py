@@ -14,7 +14,9 @@ from collections import OrderedDict
 
 # Load class mappings
 @st.cache_resource
-def load_class_mappings(path="../model/class_mappings.json"):
+def load_class_mappings():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(script_dir, "..", "model", "class_mappings.json")
     with open(path, 'r') as f:
         return json.load(f)
 
@@ -28,7 +30,9 @@ def load_model(device='cpu'):
         num_base_colours=len(class_mappings['baseColour']),
         num_seasons=len(class_mappings['season'])
     )
-    state_dict = torch.load("../model/codemonk_model.pth", map_location=device)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(script_dir, "..", "model", "codemonk_model.pth")
+    state_dict = torch.load(model_path, map_location=device)
     
     # Remove 'module.' if present
     new_state_dict = OrderedDict()
@@ -44,7 +48,9 @@ def load_model(device='cpu'):
 @st.cache_resource
 def get_transform():
     # Load the exact transforms used during training
-    with open("../model/transforms.pkl", "rb") as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    transform_path = os.path.join(script_dir, "..", "model", "transforms.pkl")
+    with open(transform_path, "rb") as f:
         return pickle.load(f)
 
 # Decode predictions
