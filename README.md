@@ -6,8 +6,9 @@ A deep learning application that predicts 4 different attributes from a single f
 
 **Try it now**: [https://fashionclass.streamlit.app/](https://fashionclass.streamlit.app/)
 
-**Kaggle Notebook**: [https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh](https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh)
 No installation required! Just upload an image or paste an image URL to get instant predictions.
+
+**Kaggle Notebook**: [https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh](https://www.kaggle.com/code/kanishknoir/codemonk-kanishk-pratap-singh)
 
 ## 🚀 Quick Start
 
